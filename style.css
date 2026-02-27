@@ -1,0 +1,82 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+body {
+  background: linear-gradient(135deg, #1f2a33, #2c3e50);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.calculator h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 22px;
+  font-weight: 600;
+}
+.calculator {
+  background: #1f2a33;
+  width: 22rem;
+  padding: 25px;
+  border-radius: 15px;
+  color: rgb(203, 180, 149);
+  box-shadow:
+    0 0 15px rgba(0, 0, 0, 0.5),
+    0 0 30px rgba(0, 0, 0, 0.3);
+}
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+.display {
+  width: 100%;
+  margin-bottom: 15px;
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  color: White;
+  outline: none;
+  font-size: 25px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  background: #1f2a33;
+  text-align: right;
+}
+button {
+  height: 65px;
+  border: none;
+  border-radius: 50%;
+  background: #1f2a33;
+  color: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  font-size: 25px;
+  cursor: pointer;
+}
+button:hover {
+  background: #2c3e50;
+}
+button:active {
+  transform: scale(0.95);
+}
+.buttons .btn-clear,
+.buttons .btn-del {
+  font-size: 16px;
+}
+.buttons .btn-clear,
+.btn-del,
+.btn-operator {
+  color: rgb(46, 220, 46);
+}
+.buttons .btn-equal {
+  background: rgba(219, 147, 11, 0.8);
+  font-size: 28px;
+  font-weight: 700;
+}
